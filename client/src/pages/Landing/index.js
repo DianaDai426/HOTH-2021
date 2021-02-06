@@ -1,13 +1,13 @@
 import React from 'react'
 import styles from './Landing.module.scss'
 import { Link, Route, withRouter} from 'react-router-dom'
-
+import Navbar from '../../components/Navbar'
 
 
 export default() =>{
     return <div className={styles.wrap}>
         
-        
+        <Navbar/>
         {/*Landing Title */}
         <section className = {styles.landing}>
             <div className={styles.mainTitle}>You're not alone.</div>
