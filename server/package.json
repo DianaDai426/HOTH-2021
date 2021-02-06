@@ -1,5 +1,5 @@
 {
-  "name": "hoth2021",
+  "name": "server",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
