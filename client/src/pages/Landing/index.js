@@ -2,6 +2,8 @@ import React from 'react'
 import styles from './Landing.module.scss'
 import { Link, Route, withRouter} from 'react-router-dom'
 
+
+
 export default() =>{
     return <div className={styles.wrap}>
         
@@ -23,9 +25,6 @@ export default() =>{
             somepost
            
         </section>
-
-
-        
 
     </div>
 }

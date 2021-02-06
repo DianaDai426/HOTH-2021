@@ -40,7 +40,7 @@ function App() {
         </section>
      
 
-         {/*fotter */}
+         {/*footer */}
       <footer className={styles.footer}>
        <b>HOTH 2021 Dolphin :)</b>
 

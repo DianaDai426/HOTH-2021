@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Sidebar = () =>{
+const Navbar = () =>{
     return<h2>sidebar</h2>
 }
 
