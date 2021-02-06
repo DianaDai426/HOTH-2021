@@ -1,6 +1,9 @@
 import React from 'react'
 import styles from './Landing.module.scss'
 import { Link, Route, withRouter} from 'react-router-dom'
+import PostList from '../../components/Posts/PostList'
+import Post from '../../components/Posts/index'
+
 
 export default() =>{
     return <div className={styles.wrap}>
@@ -20,8 +23,14 @@ export default() =>{
         
         {/*Post */}
          <section className={styles.post}>
-            somepost
-           
+            {PostList.map ((obj)=>{
+                return(
+                    <Post
+                        data={obj}
+                    />
+               );
+            })}
+          
         </section>
 
 

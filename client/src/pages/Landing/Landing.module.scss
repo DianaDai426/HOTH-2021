@@ -55,11 +55,9 @@
         font-family: PT Serif;
         font-style: normal;
         font-weight: normal;
-        font-size: 100px;
-        height:1000px;
         display: flex;
-        align-items: center;
+        flex-direction: column;
         justify-content: center;
-        color:white;
+        margin-top: 50px;
     }
 }
