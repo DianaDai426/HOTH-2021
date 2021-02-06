@@ -1,5 +1,80 @@
 
 .wrap{
+    height:100%;
+
+    .landing{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainTitle{
+        font-family: PT Serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 96px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: auto;
+        padding-top: 100px;
+        padding-bottom: 30px;
+        color:white;
+        
+    }
+    .showPosts{
+
+        font-family: PT Serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height:70px;
+        font-size: 36px;
+        padding: 0px 30px;
+        width:auto;
+        margin:auto;
+        color: #000000;
+        background-color:#FF6C7D;
+        
+        
+        border-radius: 1em;
+       
+    }
+    .about{
+        font-family: PT Serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        display:flex;
+        justify-content: center;
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 60px;
+        color:white;
+        text-decoration: underline;
+        
+    }
+    .post{
+        font-family: PT Serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 100px;
+        height:1000px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color:white;
+    }
+}
+
+/*
+.wrap{
     
     height:100%;
 
@@ -61,3 +136,4 @@
         margin-top: 50px;
     }
 }
+*/

@@ -17,7 +17,7 @@ export default() =>{
 
         {/*about */}
         <section className={styles.about}>
-        <Link  to="/about">  whoa, what is this about?</Link>  
+        <Link  to="/about" style={{color:"white"}}>  whoa, what is this about?</Link>  
            
         </section>
         
