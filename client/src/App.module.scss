@@ -1,23 +1,25 @@
 .App {
   
- 
-}
 
 .content{
-  flex:1;
+  //flex:1;
+  //display: flex;
   background-color: rgb(85, 83, 83);
 }
+
 .footer{
   text-align: center; 
-  color: #555555;
+  color: white;
   display:flex;
   align-items: center;
   justify-content: center;
   background: #0a6ad8;
   height:50px;
 }
+
 .header{
-  height: 171px;
+  //display: flex;
+  height: 100px;
   background: #A0D1FF;
   border: 1px solid #000000;
   box-sizing: border-box;
@@ -28,8 +30,10 @@
     justify-content: space-between;
     display:flex;
     align-items: center;
+  }
+
     .title{
-      width: 340px;
+      width: auto;
       height: 100%;
       margin-left: 50px;
       font-family: PT Serif;
@@ -43,6 +47,8 @@
 
       color: #000000;
     }
+}
+
 
 
     .createPost{
@@ -52,12 +58,12 @@
         align-items: center;
 
       .plus{
-        width:120px;
-        height:120px;
+        width:70px;
+        height:70px;
         font-family: PT Serif;
         font-style: normal;
         font-weight: normal;
-        font-size: 104px;
+        font-size: 64px;
         margin-right: 50px;
         align-items: center;
         text-align: center;
@@ -72,4 +78,3 @@
      
     }
   }
-}

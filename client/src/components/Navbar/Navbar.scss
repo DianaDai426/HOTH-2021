@@ -1,0 +1,43 @@
+.navbar{
+    position: fixed;
+    width: 100%;
+    min-height: 10vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #C4C4C4;
+    transition: all .7s ease-in;
+    padding: 16px 32px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  }
+  .navbar-brand{
+      color: black;
+      font-size: x-large;
+      text-align: center;
+      font-weight: 600;
+      text-underline-position: none;
+  }
+  .nav-link{
+    color: black;
+    font-size: x-large;
+    font-weight: 600;
+  }
+  //IMPORTANT
+  .scrolled{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: lightblue;
+  }
+  .logo img{
+    width: 50px;
+  }
+//   .navigation{
+//       //your navigation styles
+//   }
+    .button{
+        color: red;
+
+    }
+  
