@@ -11,7 +11,7 @@ export default() =>{
         {/*Landing Title */}
         <section className = {styles.landing}>
             <div className={styles.mainTitle}>You're not alone.</div>
-            <div className={styles.showPosts}><button>See for yourself</button></div>
+           <button> <div className={styles.showPosts}>See for yourself</div></button>
         </section>
 
         {/*about */}
@@ -36,12 +36,9 @@ export default() =>{
             })}
           
         </section>
-<<<<<<< HEAD
-=======
         */}
 
         
->>>>>>> dcc10cd030635b68711f1f29df201ff383ba96e3
 
     </div>
 }
