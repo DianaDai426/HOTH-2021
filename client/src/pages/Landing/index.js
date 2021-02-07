@@ -11,12 +11,12 @@ export default() =>{
         {/*Landing Title */}
         <section className = {styles.landing}>
             <div className={styles.mainTitle}>You're not alone.</div>
-            <div className={styles.showPosts}>See for yourself</div>
+            <div className={styles.showPosts}><button>See for yourself</button></div>
         </section>
 
         {/*about */}
         <section className={styles.about}>
-            <Link  to="/about" style={{color:"white"}}>  whoa, what is this about?</Link>  
+            <Link  to="/about" style={{color:"black"}}>  whoa, what is this about?</Link>  
         </section>
 
 
