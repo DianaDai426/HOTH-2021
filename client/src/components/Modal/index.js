@@ -1,7 +1,18 @@
-import React from 'react'
+import React from "react";
+import "./Modal.scss";
+const Modal = ({ handleClose, show, children }) => {
+  const showHideClassName = show ? "modal d-block" : "modal d-none";
 
-const Modal = () =>{
-    return<h2>Modal</h2>
-}
+  return (
+    <div className={showHideClassName}>
+      <div className="modal-container">
+        {children}
+        <a href="javascript:;" className="modal-close" onClick={handleClose}>
+          close
+        </a>
+      </div>
+    </div>
+  );
+};
 
-export default Modal
+export default Modal;
