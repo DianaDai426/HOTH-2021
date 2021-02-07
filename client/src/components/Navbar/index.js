@@ -18,14 +18,13 @@ class Nav extends React.Component{
           modal: false,
           tag: 0,
           content: "",
-          like: 0,
         };
       }
 
       handleChange= (e) => {
         const target = e.target;
         //const tag = target.tag;
-        const value = target.content;
+        const value = target.value;
     
         this.setState(prevState =>({
           modal: prevState.modal,
@@ -36,15 +35,15 @@ class Nav extends React.Component{
       }
     
       handleSubmit= (e) => {
-        console.log(e);
+        console.log(this.state.content);
         const target = e.target;
         //const tag = target.tag;
         const value = target.content;        
         //this.setState(prevState =>({ radioValue: true, content: ""}));
 
         const newPost ={
-          tag: 0,
-          content: value,
+          tag: this.state.tag,
+          content: this.state.content,
       }
         this.props.handleSubmit(newPost);
         this.modalClose();
@@ -114,9 +113,6 @@ render(){
                 {radio.name}
               </ReactBootstrap.ToggleButton>
             ))}
-
-
-
 
 
 

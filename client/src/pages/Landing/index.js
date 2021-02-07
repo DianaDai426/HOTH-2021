@@ -20,13 +20,13 @@ export default(props) =>{
 
         {/*about */}
         <section className={styles.about}>
-            <a href="#About" style={{color:"white"}}>whoa, what is this about?</a>  
+            <a href="#about" style={{color:"white"}}>whoa, what is this about?</a>  
 
         </section>
 
 
         {/*Posts*/}
-        <div id="posts"><PostsApp /></div>
+        <div id="posts"><PostsApp posts = {props.posts}/></div>
 
         {/*About*/}
         <div id="about"><About /></div>
