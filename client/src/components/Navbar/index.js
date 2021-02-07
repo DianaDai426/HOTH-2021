@@ -21,21 +21,22 @@ class Nav extends React.Component{
           like: 0,
         };
       }
+
       handleChange= (e) => {
         const target = e.target;
-        const tag = target.tag;
+        //const tag = target.tag;
         const value = target.content;
     
         this.setState(prevState =>({
           modal: prevState.modal,
           tag: prevState.tag,
           content: value,
-          like: prevState.like,
+          //like: prevState.like,
         }));
       }
     
       handleSubmit= (e) => {
-        console.log(e.target.value);
+        console.log(e);
         const target = e.target;
         //const tag = target.tag;
         const value = target.content;        
@@ -91,6 +92,13 @@ render(){
         <Modal show={this.state.modal} handleClose={e => this.modalClose(e)}>
           <h2>Enter your Encouragement/Failure</h2>
           <div className="form-group">
+
+      
+          <ReactBootstrap.ButtonGroup aria-label="Basic example">
+                <ReactBootstrap.Button onClick={this.handleClick_E}>Encouragement</ReactBootstrap.Button>
+                <ReactBootstrap.Button onClick={this.handleClick_F} >Failure</ReactBootstrap.Button>
+            </ReactBootstrap.ButtonGroup> 
+
           {/* <ReactBootstrap.ButtonGroup toggle>
             {radios.map((radio, idx) => (
               <ReactBootstrap.ToggleButton
@@ -106,11 +114,12 @@ render(){
                 {radio.name}
               </ReactBootstrap.ToggleButton>
             ))}
-          </ReactBootstrap.ButtonGroup>          */}
-          {/* <ReactBootstrap.ButtonGroup aria-label="Basic example">
-                <ReactBootstrap.Button onClick={this.handleClick_E}>Encouragement</ReactBootstrap.Button>
-                <ReactBootstrap.Button onClick={this.handleClick_F} >Failure</ReactBootstrap.Button>
-            </ReactBootstrap.ButtonGroup> */}
+
+
+
+
+
+
             {/* <label>Enter Name:</label> */}
             <input
               type="text"
@@ -119,6 +128,7 @@ render(){
               onChange={e => this.handleChange(e)}
               className="form-control"
             />
+
           </div>
           <div className="form-group">
             <button onClick={e => this.handleSubmit(e)} type="button">

@@ -8,6 +8,10 @@ import Nav from './components/Navbar'
 const exampleList = [
   {
     tag:'Encouragement',
+    content:'I love ucla!'
+  },
+  {
+    tag:'Encouragement',
     content:'Everything will be okay!'
   },
   {
@@ -52,6 +56,28 @@ class App extends React.Component{
       <div className="app">
       {/* Navbar */}
       <Nav handleSubmit = {this.handleSubmit}/>
+
+    {/* <section className={styles.content}>
+      <Route path = '/' exact component = {Landing}/>
+      <Route path = '/create_post' exact component = {CreatePost}/>
+      <Route path = '/about' exact component = {About}/>
+    </section> */}
+
+
+      {/*header
+      <header className={styles.header}>
+       
+        <div className={styles.top}>
+
+          {/*title 
+          <Link to="/" style={{textDecoration:'none'}}><div className={styles.title}>
+            Some Title
+          </div></Link>
+
+          {/*create a post 
+          <div className={styles.createPost}>
+            <Link to="/create_post" style={{textDecoration:'none'}}><div className={styles.plus}> + </div></Link>
+          </div>
 
         {/*header*/}
         

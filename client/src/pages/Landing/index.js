@@ -4,6 +4,7 @@ import { Link, Route, withRouter} from 'react-router-dom'
 //import PostList from '../../components/Posts/PostList'
 //import Post from '../../components/Posts/index'
 import PostsApp from '../../components/PostsApp'
+import About from '../About'
 
 export default(props) =>{
     // alert("hello");
@@ -13,20 +14,23 @@ export default(props) =>{
         {/*Landing Title */}
         <section className = {styles.landing}>
             <div className={styles.mainTitle}>You're not alone.</div>
-            <div className={styles.showPosts}>See for yourself</div>
+            <a href="#posts" className={styles.showPosts}>See for yourself</a>
+
         </section>
 
         {/*about */}
         <section className={styles.about}>
-            <Link  to="/about" style={{color:"white"}}>  whoa, what is this about?</Link>  
+            <a href="#About" style={{color:"white"}}>whoa, what is this about?</a>  
+
         </section>
 
 
         {/*Posts*/}
-        <section>
-            <PostsApp posts={props.posts}/>
-        </section>
-        
+        <div id="posts"><PostsApp /></div>
+
+        {/*About*/}
+        <div id="about"><About /></div>
+
         {/*Post 
          <section className={styles.post}>
             {PostList.map ((obj)=>{
