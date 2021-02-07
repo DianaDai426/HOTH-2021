@@ -5,6 +5,13 @@ import { Link, Route, withRouter} from 'react-router-dom'
 import About from './pages/About'
 import CreatePost from './pages/CreatePost'
 import Nav from './components/Navbar'
+import {
+  BrowserRouter as Router,
+  Switch,
+} from "react-router-dom";
+import SignInModal from './components/SignIn/SignInModal'
+import SignUpModal from './components/SignUp/SignUpModal'
+
 const exampleList = [
   {
     tag:'Encouragement',
@@ -108,7 +115,8 @@ class App extends React.Component{
             <Route path = '/about' exact component = {About}/>
 
           </section>
-      
+
+         
 
           {/*footer */}
         <footer className={styles.footer}>

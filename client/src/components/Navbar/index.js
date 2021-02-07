@@ -4,7 +4,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import Modal from '../Modal'
-
+import SignInModal from '../SignIn/SignInModal'
 
 class Nav extends React.Component{
     constructor(props) {
@@ -85,6 +85,7 @@ render(){
     return(
     <ReactBootstrap.Navbar fixed="top" bg="dark" expand="lg" variant="dark">
     <ReactBootstrap.Navbar.Brand href="/">APP NAME</ReactBootstrap.Navbar.Brand>
+
         <ReactBootstrap.Nav className="mr-auto">
         <ReactBootstrap.Nav.Link href="javascript:;" onClick={e => this.modalOpen(e)}>Add</ReactBootstrap.Nav.Link>
 
@@ -109,6 +110,12 @@ render(){
         </Modal>
 
         </ReactBootstrap.Nav>
+
+        <ReactBootstrap.Nav className='SignIn'>
+        <ReactBootstrap.Nav.Link href="javascript:;" ><SignInModal/></ReactBootstrap.Nav.Link>
+        </ReactBootstrap.Nav>
+
+
 
     </ReactBootstrap.Navbar>
     )
