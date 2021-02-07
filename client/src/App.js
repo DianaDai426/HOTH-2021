@@ -111,9 +111,9 @@ class App extends React.Component{
       
 
           {/*footer */}
-        <footer className={styles.footer}>
+        <div className={styles.footer}>
           <b>HOTH 2021 Dolphin :)</b>
-        </footer>
+        </div>
           
           
       </div>

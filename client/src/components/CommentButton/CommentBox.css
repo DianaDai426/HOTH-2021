@@ -13,6 +13,82 @@ button {
 }
 
 .comment-box {
+  margin: 10px;
+  max-width: 37.5rem;
+  width: 150%;
+  color: #fff;
+  background-color: #909090;
+  border-radius: 0.875rem;
+  padding: 0.2rem 1rem 2rem;
+}
+.comment-form {
+  background-color: #fff;
+  border-radius: 0.25rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  margin: 10px 0px;  
+}
+.comment-form-fields {
+  margin-bottom: 0.25rem;
+}
+
+input{
+  width: 100%;
+}
+
+textarea{
+  width: 100%;
+}
+
+.comment-count {
+  color:  #404040;
+}
+#comment-reveal {
+  float: right;
+  background-color: #00BDFC;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.comment {
+  border-top: 0.125rem solid  #404040;
+}
+
+.comment-header{
+  margin-top: 10px;
+}
+
+.comment-body {
+  font-style: italic;
+  margin-left: 1rem;
+}
+.comment-footer {
+  margin-bottom: 1rem;
+}
+.comment-footer-delete {
+  padding: 0.2rem 0;
+  color:  #404040;
+  text-decoration: none;
+  
+  
+}
+
+
+/*
+body {
+  font-family: 'PT Sans', sans-serif;
+  padding: 2rem;
+}
+button {
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0.75em;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.comment-box {
   max-width: 37.5rem;
   color: #fff;
   background-color: #909090;
@@ -55,3 +131,4 @@ button {
   
   
 }
+*/
