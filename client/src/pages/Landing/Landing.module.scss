@@ -2,7 +2,7 @@ html{scroll-behavior:smooth}
 .wrap{
     height:100%;
     background-color: #00587a;
-    width:100%;
+    margin: 0px;
 
     .landing{
         display:flex;
@@ -22,7 +22,7 @@ html{scroll-behavior:smooth}
         width: auto;
         padding-top: 130px;
         padding-bottom: 30px;
-        color:rgb(41, 38, 38);
+        color:white;
         
     }
     .showPosts{

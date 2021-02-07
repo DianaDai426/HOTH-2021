@@ -1,5 +1,6 @@
 .App {
-  
+
+}
 
 .content{
   //flex:1;
@@ -13,8 +14,9 @@
   display:flex;
   align-items: center;
   justify-content: center;
-  background: #0a6ad8;
+  background-color: #0f3057;
   height:50px;
+  width: auto;
 }
 
 .header{
@@ -44,8 +46,7 @@
       display: flex;
       align-items: center;
       text-align: center;
-
-      color: #000000;
+      color: white;
     }
 }
 
@@ -77,4 +78,3 @@
       }
      
     }
-  }

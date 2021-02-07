@@ -1,12 +1,31 @@
 .modal {
     background: rgba(0, 0, 0, 0.6);
+
   }
   .modal-container {
+    border: 2px solid black;
+    border-radius: 15px;
     position: absolute;
-    width: 60%;
-    background: #ffffff;
-    left: 25%;
+    width: 800px;
+    height: 300px;
+    background: white;
+    /*left: 25%;
     top: 30%;
-    padding: 20px;
+    margin: 30px;*/
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    
+    padding: 10px 30px;
   }
-  
+  .modal-close{
+    padding: 0px 0px 0px 20px;
+    color: black;
+    margin-top:-18px;
+    font-size: 30px;
+    font-weight: 700;
+    background-color: white;
+  }

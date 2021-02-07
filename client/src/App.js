@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './App.module.scss'
 import Landing from './pages/Landing'
-import { Link, Route, withRouter} from 'react-router-dom'
+import {Route, withRouter} from 'react-router-dom'
 import About from './pages/About'
 import CreatePost from './pages/CreatePost'
 import Nav from './components/Navbar'
@@ -64,64 +64,25 @@ class App extends React.Component{
       {/* Navbar */}
       <Nav handleSubmit = {this.handleSubmit}/>
 
-    {/* <section className={styles.content}>
-      <Route path = '/' exact component = {Landing}/>
-      <Route path = '/create_post' exact component = {CreatePost}/>
-      <Route path = '/about' exact component = {About}/>
-    </section> */}
-
-
-      {/*header
-      <header className={styles.header}>
-       
-        <div className={styles.top}>
-
-          {/*title 
-          <Link to="/" style={{textDecoration:'none'}}><div className={styles.title}>
-            Some Title
-          </div></Link>
-
-          {/*create a post 
-          <div className={styles.createPost}>
-            <Link to="/create_post" style={{textDecoration:'none'}}><div className={styles.plus}> + </div></Link>
-          </div>
-
-        {/*header*/}
-        
-        {/* <header className={styles.header}>
-          <div className={styles.top}> */}
-
-            {/*title */}
-            {/* <Link to="/" style={{textDecoration:'none'}}><div className={styles.title}>
-              Some Title
-            </div></Link> */}
-
-            {/*create a post */}
-            {/* <div className={styles.createPost}>
-              <Link to="/create_post" style={{textDecoration:'none'}}><div className={styles.plus}> + </div></Link>
-            </div> */}
-
-
-          {/* </div> */}
-
-        {/* // </header> */}
-          
-
         {/*content */}
         <section className={styles.content}>
+
             <Route path = '/' 
             exact component={() => <Landing posts={this.state.posts}/>}/>
             <Route path = '/create_post' exact component = {CreatePost}/>
-            <Route path = '/about' exact component = {About}/>
+            <Route path = '/about' exact component = {About}/>          
+
+
+
 
           </section>
 
          
 
           {/*footer */}
-        <footer className={styles.footer}>
+        <div className={styles.footer}>
           <b>HOTH 2021 Dolphin :)</b>
-        </footer>
+        </div>
           
           
       </div>
