@@ -4,6 +4,7 @@ import { Link, Route, withRouter} from 'react-router-dom'
 //import PostList from '../../components/Posts/PostList'
 //import Post from '../../components/Posts/index'
 import PostsApp from '../../components/PostsApp'
+import About from '../About'
 
 export default() =>{
     return <div className={styles.wrap}>
@@ -11,19 +12,21 @@ export default() =>{
         {/*Landing Title */}
         <section className = {styles.landing}>
             <div className={styles.mainTitle}>You're not alone.</div>
-            <div className={styles.showPosts}>See for yourself</div>
+            <a href="#posts" className={styles.showPosts}>See for yourself</a>
         </section>
 
         {/*about */}
         <section className={styles.about}>
-            <Link  to="/about" style={{color:"white"}}>  whoa, what is this about?</Link>  
+            <a href="#about" style={{color:"white"}}>whoa, what is this about?</a>  
         </section>
 
 
         {/*Posts*/}
-        <section>
-            <PostsApp />
-        </section>
+        <div id="posts"><PostsApp /></div>
+
+        {/*About*/}
+        <div id="about"><About /></div>
+
         
         {/*Post 
          <section className={styles.post}>
@@ -36,12 +39,9 @@ export default() =>{
             })}
           
         </section>
-<<<<<<< HEAD
-=======
         */}
 
         
->>>>>>> dcc10cd030635b68711f1f29df201ff383ba96e3
 
     </div>
 }
