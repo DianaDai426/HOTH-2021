@@ -36,8 +36,29 @@
 //   .navigation{
 //       //your navigation styles
 //   }
-    .button{
-        color: red;
 
-    }
-  
+.tag{
+  font-size: xx-large;
+  height: 30px;
+  background-color: white;
+}
+.save{
+  font-size: x-large;
+  height: 30px;
+  margin: 10px;
+  padding: 0px;
+  background-color: white;
+}
+.choose{
+  font-size:small;
+  color: grey;
+  padding: 5px 25px;
+}
+
+input[type=text] {
+  width: 90%;
+  height: 50px;
+  margin: 10px 20px;
+  box-sizing: border-box;  
+  border-color: grey;
+}
