@@ -16,7 +16,7 @@ export default() =>{
 
         {/*about */}
         <section className={styles.about}>
-            <Link  to="/about" style={{color:"black"}}>  whoa, what is this about?</Link>  
+            <Link  to="/about" style={{color:"white"}}>  whoa, what is this about?</Link>  
         </section>
 
 
@@ -36,9 +36,12 @@ export default() =>{
             })}
           
         </section>
+<<<<<<< HEAD
+=======
         */}
 
         
+>>>>>>> dcc10cd030635b68711f1f29df201ff383ba96e3
 
     </div>
 }

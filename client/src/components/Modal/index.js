@@ -1,8 +1,5 @@
 import React from "react";
 import "./Modal.scss";
-
-
-
 const Modal = ({ handleClose, show, children }) => {
   const showHideClassName = show ? "modal d-block" : "modal d-none";
 
@@ -15,7 +12,7 @@ const Modal = ({ handleClose, show, children }) => {
         </a>
       </div>
     </div>
-  )
+  );
 };
 
 export default Modal;
