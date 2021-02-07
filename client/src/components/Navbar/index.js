@@ -5,18 +5,13 @@ import ReactDOM from "react-dom";
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import Modal from '../Modal'
 
-//import "./styles.css";
-const radios = [
-  { name: 'Encouragement', value: '1' },
-  { name: 'Failure', value: '2' },]
-
 
 class Nav extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
           modal: false,
-          tag: 0,
+          tag: false,
           content: "",
         };
       }
@@ -30,7 +25,6 @@ class Nav extends React.Component{
           modal: prevState.modal,
           tag: prevState.tag,
           content: value,
-          //like: prevState.like,
         }));
       }
     
@@ -38,11 +32,9 @@ class Nav extends React.Component{
         console.log(this.state.content);
         const target = e.target;
         //const tag = target.tag;
-        const value = target.content;        
-        //this.setState(prevState =>({ radioValue: true, content: ""}));
-
+        const value = target.content;       
         const newPost ={
-          tag: this.state.tag,
+          tag: this.state.tag? "Encouragement": "Failure",
           content: this.state.content,
       }
         this.props.handleSubmit(newPost);
@@ -62,23 +54,31 @@ class Nav extends React.Component{
         });
       }
 
-      // handleClick_E = () => {
-      //   this.setState(prevState =>({
-      //     radioValue: true,
-      //     modal: prevState.modal,
-      //     content: prevState.content,
-      //     like: prevState.like,
-      //   }))
-      // }
-      // handleClick_F = () =>{
-      //   this.setState(prevState =>({
-      //     tag: false,
-      //     modal: prevState.modal,
-      //     content: prevState.content,
-      //     like: prevState.like,
-      //   }))
-      // }
+      handleClick_E = () => {
+        this.setState(prevState =>({
+          tag: 0,
+          modal: prevState.modal,
+          content: prevState.content,
+        }))
+        console.log(this.state.tag);
+      }
 
+      handleClick_F = () =>{
+        this.setState(prevState =>({
+          tag: 1,
+          modal: prevState.modal,
+          content: prevState.content,
+        }))
+        console.log(this.state.tag);
+      }
+
+      handleClick = () =>{
+        this.setState(prevState =>({
+          tag: !this.state.tag,
+          modal: prevState.modal,
+          content: prevState.content,
+        }))        
+      }
 
 
 render(){
@@ -91,32 +91,7 @@ render(){
         <Modal show={this.state.modal} handleClose={e => this.modalClose(e)}>
           <h2>Enter your Encouragement/Failure</h2>
           <div className="form-group">
-
-      
-          <ReactBootstrap.ButtonGroup aria-label="Basic example">
-                <ReactBootstrap.Button onClick={this.handleClick_E}>Encouragement</ReactBootstrap.Button>
-                <ReactBootstrap.Button onClick={this.handleClick_F} >Failure</ReactBootstrap.Button>
-            </ReactBootstrap.ButtonGroup> 
-
-          {/* <ReactBootstrap.ButtonGroup toggle>
-            {radios.map((radio, idx) => (
-              <ReactBootstrap.ToggleButton
-                key={idx}
-                type="radio"
-                variant="secondary"
-                name="radio"
-                value={this.radioValue}
-                checked={this.radioValue === radio.value}
-                onChange={(e) => this.setState(prevState=>{(radioValue: e.currentTarget.value)})
-                }
-              >
-                {radio.name}
-              </ReactBootstrap.ToggleButton>
-            ))}
-
-
-
-            {/* <label>Enter Name:</label> */}
+        <ReactBootstrap.Button onClick = {this.handleClick}>{this.state.tag==0? "Failure":"Encouragement"}</ReactBootstrap.Button>
             <input
               type="text"
               value={this.state.content}
