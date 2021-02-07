@@ -2,7 +2,7 @@ import React from 'react'
 import './index.css';
 import PostList from './PostList'
 
-function PostsApp() {
+function PostsApp(props) {
 
     const exampleList = [
         {
@@ -34,7 +34,7 @@ function PostsApp() {
 
     return (
         <div className="post-body">
-            <PostList posts={exampleList}/>
+            <PostList posts={props.posts}/>
         </div>
     )
 }

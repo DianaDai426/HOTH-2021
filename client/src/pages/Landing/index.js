@@ -6,7 +6,9 @@ import { Link, Route, withRouter} from 'react-router-dom'
 import PostsApp from '../../components/PostsApp'
 import About from '../About'
 
-export default() =>{
+export default(props) =>{
+    // alert("hello");
+    // console.log(props.posts);
     return <div className={styles.wrap}>
     
         {/*Landing Title */}
@@ -24,12 +26,11 @@ export default() =>{
 
 
         {/*Posts*/}
-        <div id="posts"><PostsApp /></div>
+        <div id="posts"><PostsApp posts = {props.posts}/></div>
 
         {/*About*/}
         <div id="about"><About /></div>
 
-        
         {/*Post 
          <section className={styles.post}>
             {PostList.map ((obj)=>{
