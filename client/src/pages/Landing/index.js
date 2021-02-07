@@ -13,11 +13,13 @@ export default() =>{
         <section className = {styles.landing}>
             <div className={styles.mainTitle}>You're not alone.</div>
             <a href="#posts" className={styles.showPosts}>See for yourself</a>
+
         </section>
 
         {/*about */}
         <section className={styles.about}>
             <a href="#about" style={{color:"white"}}>whoa, what is this about?</a>  
+
         </section>
 
 
