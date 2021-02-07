@@ -59,15 +59,10 @@ class App extends React.Component{
 
         {/*content */}
         <section className={styles.content}>
-
             <Route path = '/' 
             exact component={() => <Landing posts={this.state.posts}/>}/>
             <Route path = '/create_post' exact component = {CreatePost}/>
             <Route path = '/about' exact component = {About}/>          
-
-
-
-
           </section>
       
 
