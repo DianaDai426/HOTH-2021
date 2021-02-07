@@ -1,5 +1,6 @@
 import React from 'react'
 import LikeButton from '../LikeButton'
+import CommentButton from '../CommentBox/CommentButton'
 
 function Post(props) {
     return (
@@ -7,6 +8,7 @@ function Post(props) {
             <div className="post-tag">{props.tag}</div>
             <div className="post-content">{props.content}</div>
             <LikeButton />
+            <CommentButton/>            
         </div>
     )
 }

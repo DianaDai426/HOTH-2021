@@ -19,13 +19,18 @@ class LikeButton extends React.Component{
             
           return (
           <div className='Button'>
-            <button onClick={this.addLike}>
+            <button onClick={this.addLike}
+                    styles={{
+                        border:'none',
+                        
+                    }}
+            >
                 <FavoriteIcon 
                 style={{ 
                     color: "red",
                     border:'none',
                     background:'none',
-                    padding:0
+                    padding:0,
                     
                         
                  }}
