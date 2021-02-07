@@ -5,7 +5,9 @@ import { Link, Route, withRouter} from 'react-router-dom'
 //import Post from '../../components/Posts/index'
 import PostsApp from '../../components/PostsApp'
 
-export default() =>{
+export default(props) =>{
+    // alert("hello");
+    // console.log(props.posts);
     return <div className={styles.wrap}>
     
         {/*Landing Title */}
@@ -22,7 +24,7 @@ export default() =>{
 
         {/*Posts*/}
         <section>
-            <PostsApp />
+            <PostsApp posts={props.posts}/>
         </section>
         
         {/*Post 
@@ -36,12 +38,9 @@ export default() =>{
             })}
           
         </section>
-<<<<<<< HEAD
-=======
         */}
 
         
->>>>>>> dcc10cd030635b68711f1f29df201ff383ba96e3
 
     </div>
 }
