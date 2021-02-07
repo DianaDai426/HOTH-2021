@@ -95,8 +95,9 @@ render(){
           {/* <h2>Enter your Encouragement/Failure</h2> */}
           <div className="form-group">
         <button className="tag" onClick = {this.handleClick}>{this.state.tag==0? "Failure":"Encouragement"}</button>
+        <h3 className="choose">click to choose</h3>
           </div>
-          <div className = "input">
+          <div >
             <input
               className = "post"
               type="text"

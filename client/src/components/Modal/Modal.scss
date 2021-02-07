@@ -3,16 +3,20 @@
 
   }
   .modal-container {
-    background-color:#e7e7de ;
+    border: 2px solid black;
+    border-radius: 15px;
     position: absolute;
     width: 60%;
-    height: 40%;
-    background: #e7e7de;
+    height: 30%;
+    background: white;
     left: 25%;
     top: 30%;
-    padding: 30px 40px;
-    margin: 0.5rem;
+    margin: 30px;
+    padding: 10px 30px;
   }
   .modal-close{
-    font-color: black;
+    padding: 0px 0px 0px 20px;
+    color: black;
+    font-size: large;
+    font-weight: 700;
   }

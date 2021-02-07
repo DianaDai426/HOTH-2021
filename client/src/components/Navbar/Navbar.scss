@@ -36,26 +36,29 @@
 //   .navigation{
 //       //your navigation styles
 //   }
-.input{
-  padding: 5px 10px;
-  height: 30%;
-  background-color: #e7e7de;
-}
 
-textarea{
-  background-color: #e7e7de;
-  border-color: black;
-  font-size: 10px;
-  width: 180px;
-  height: 30px;
-}
 .tag{
   font-size: xx-large;
   height: 30px;
-  background-color: #e7e7de;
+  background-color: white;
 }
 .save{
   font-size: x-large;
   height: 30px;
-  background-color: #e7e7de;
+  margin: 10px;
+  padding: 0px;
+  background-color: white;
+}
+.choose{
+  font-size:small;
+  color: grey;
+  padding: 5px 25px;
+}
+
+input[type=text] {
+  width: 90%;
+  height: 50px;
+  margin: 10px 20px;
+  box-sizing: border-box;  
+  border-color: grey;
 }

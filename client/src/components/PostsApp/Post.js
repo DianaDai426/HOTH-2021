@@ -6,8 +6,10 @@ function Post(props) {
         <div className="post-card">
             <div className="post-tag">{props.tag}</div>
             <div className="post-content">{props.content}</div>
-            <LikeButton />
-            <CommentButton/>
+            <div className="post-buttons">
+                <div><LikeButton /></div>
+                <div><CommentButton/></div>
+            </div>
         </div>
     )
 }
