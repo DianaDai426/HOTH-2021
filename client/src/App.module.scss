@@ -1,7 +1,5 @@
 .App {
   
- 
-}
 
 .content{
   //flex:1;
@@ -32,6 +30,7 @@
     justify-content: space-between;
     display:flex;
     align-items: center;
+  }
 
     .title{
       width: auto;
@@ -48,6 +47,8 @@
 
       color: #000000;
     }
+}
+
 
 
     .createPost{
@@ -77,77 +78,3 @@
      
     }
   }
-}
-
-/*
-.content{
-  flex:1;
-  background-color: rgb(85, 83, 83);
-}
-.footer{
-  text-align: center; 
-  color: #555555;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  background: #0a6ad8;
-  height:50px;
-}
-.header{
-  height: 171px;
-  background: #A0D1FF;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-
-  .top{
-    height:100%;
-    margin:0 auto;
-    justify-content: space-between;
-    display:flex;
-    align-items: center;
-    .title{
-      width: 340px;
-      height: 100%;
-      margin-left: 50px;
-      font-family: PT Serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 64px;
-      line-height: 85px;
-      display: flex;
-      align-items: center;
-      text-align: center;
-
-      color: #000000;
-    }
-
-
-    .createPost{
-        
-        height:100%;
-        display:flex;
-        align-items: center;
-
-      .plus{
-        width:120px;
-        height:120px;
-        font-family: PT Serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 104px;
-        margin-right: 50px;
-        align-items: center;
-        text-align: center;
-
-        color: #000000;
-        background-color: white;
-        border-color: black;
-        border-style: solid;
-        border-radius: 1em;
-        border-width: 1px;
-      }
-     
-    }
-  }
-}
-*/

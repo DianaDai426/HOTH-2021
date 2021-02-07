@@ -7,8 +7,7 @@ import PostsApp from '../../components/PostsApp'
 
 export default() =>{
     return <div className={styles.wrap}>
-        
-        
+    
         {/*Landing Title */}
         <section className = {styles.landing}>
             <div className={styles.mainTitle}>You're not alone.</div>
@@ -37,9 +36,12 @@ export default() =>{
             })}
           
         </section>
+<<<<<<< HEAD
+=======
         */}
 
         
+>>>>>>> dcc10cd030635b68711f1f29df201ff383ba96e3
 
     </div>
 }

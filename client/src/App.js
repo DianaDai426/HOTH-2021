@@ -4,10 +4,11 @@ import Landing from './pages/Landing'
 import { Link, Route, withRouter} from 'react-router-dom'
 import About from './pages/About'
 import CreatePost from './pages/CreatePost'
-
+import Nav from './components/Navbar'
 function App() {
   return (
     <div className="app">
+    <Nav/>
 
       {/*header*/}
       <header className={styles.header}>
@@ -39,7 +40,7 @@ function App() {
         </section>
      
 
-         {/*fotter */}
+         {/*footer */}
       <footer className={styles.footer}>
         <b>HOTH 2021 Dolphin :)</b>
       </footer>
