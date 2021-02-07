@@ -1,10 +1,17 @@
 import React from 'react'
 import styles from './App.module.scss'
 import Landing from './pages/Landing'
-import { Link, Route, withRouter, Router} from 'react-router-dom'
+import {Route, withRouter} from 'react-router-dom'
 import About from './pages/About'
 import CreatePost from './pages/CreatePost'
 import Nav from './components/Navbar'
+import {
+  BrowserRouter as Router,
+  Switch,
+} from "react-router-dom";
+import SignInModal from './components/SignIn/SignInModal'
+import SignUpModal from './components/SignUp/SignUpModal'
+
 const exampleList = [
   {
     tag:'Encouragement',
@@ -69,7 +76,8 @@ class App extends React.Component{
 
 
           </section>
-      
+
+         
 
           {/*footer */}
         <div className={styles.footer}>

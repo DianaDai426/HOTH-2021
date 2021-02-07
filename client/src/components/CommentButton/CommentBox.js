@@ -77,11 +77,13 @@ class CommentBox extends React.Component {
       return (
         <form className="comment-form" onSubmit={this._handleSubmit.bind(this)}>
           <div className="comment-form-fields">
-            <input placeholder="Name" required ref={(input) => this._author = input}></input><br />
-            <textarea placeholder="Comment" rows="4" required ref={(textarea) => this._body = textarea}></textarea>
+            <div className='name'><input placeholder="Name" required ref={(input) => this._author = input}></input><br /></div>
+            </div>
+            <div className="comment-form-fields">
+            <div className='comment'><textarea placeholder="" rows="4" required ref={(textarea) => this._body = textarea}></textarea></div>
           </div>
           <div className="comment-form-actions">
-            <button type="submit">Post Comment</button>
+            <button type="submit" className='submitButton'>Add a Comment!</button>
           </div>
         </form>
       );
@@ -92,24 +94,22 @@ class CommentBox extends React.Component {
       let author = this._author;
       let body = this._body;
       this.props.addComment(author.value, body.value);
+      this._author.value='';
+      this._body.value='';
     }
   } // end CommentForm component
   
   class Comment extends React.Component {
     render () {
       return(
-        <div className="comment">
+        <div className="showcomment">
           <p className="comment-header">{this.props.author}</p>
           <p className="comment-body">- {this.props.body}</p>
-          <div className="comment-footer">
-            <a href="#" className="comment-footer-delete" onClick={this._deleteComment}>Delete Comment</a>
-          </div>
+         
         </div>
       );
     }
-    _deleteComment() {
-      alert("-- DELETE Comment Functionality COMMING SOON...");
-    }
+   
   }
   
   

@@ -4,7 +4,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import Modal from '../Modal'
-
+import SignInModal from '../SignIn/SignInModal'
 
 class Nav extends React.Component{
     constructor(props) {
@@ -88,15 +88,19 @@ render(){
     return(
     <ReactBootstrap.Navbar fixed="top" bg="dark" expand="lg" variant="dark">
     <ReactBootstrap.Navbar.Brand href="/">APP NAME</ReactBootstrap.Navbar.Brand>
+
         <ReactBootstrap.Nav className="mr-auto">
         <ReactBootstrap.Nav.Link href="javascript:;" onClick={e => this.modalOpen(e)}>Add</ReactBootstrap.Nav.Link>
 
         <Modal show={this.state.modal} handleClose={e => this.modalClose(e)}>
           {/* <h2>Enter your Encouragement/Failure</h2> */}
+
           <div className="form-group">
         <button className="tag" onClick = {this.handleClick}>{this.state.tag==0? "Failure":"Encouragement"}</button>
         <h3 className="choose">click to choose</h3>
           </div>
+
+          
           <div >
             <input
               className = "post"
@@ -108,6 +112,8 @@ render(){
             />
 
           </div>
+
+
           <div className="form-group save">
             <button className="float-right save" onClick={e => this.handleSubmit(e)} type="button">
               Save
@@ -116,6 +122,12 @@ render(){
         </Modal>
 
         </ReactBootstrap.Nav>
+
+        <ReactBootstrap.Nav className='SignIn'>
+        <ReactBootstrap.Nav.Link href="javascript:;" ><SignInModal/></ReactBootstrap.Nav.Link>
+        </ReactBootstrap.Nav>
+
+
 
     </ReactBootstrap.Navbar>
     )

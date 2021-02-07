@@ -6,17 +6,26 @@
     border: 2px solid black;
     border-radius: 15px;
     position: absolute;
-    width: 60%;
-    height: 30%;
+    width: 800px;
+    height: 300px;
     background: white;
-    left: 25%;
+    /*left: 25%;
     top: 30%;
-    margin: 30px;
+    margin: 30px;*/
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    
     padding: 10px 30px;
   }
   .modal-close{
     padding: 0px 0px 0px 20px;
     color: black;
-    font-size: large;
+    margin-top:-18px;
+    font-size: 30px;
     font-weight: 700;
+    background-color: white;
   }

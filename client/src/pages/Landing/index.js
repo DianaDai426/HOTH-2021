@@ -1,10 +1,11 @@
 import React from 'react'
 import styles from './Landing.module.scss'
-import { Link, Route, withRouter} from 'react-router-dom'
 //import PostList from '../../components/Posts/PostList'
 //import Post from '../../components/Posts/index'
 import PostsApp from '../../components/PostsApp'
 import About from '../About'
+
+
 
 export default(props) =>{
     // alert("hello");
@@ -23,7 +24,7 @@ export default(props) =>{
             <a href="#about" style={{color:"white"}}>whoa, what is this about?</a>  
 
         </section>
-
+       
 
         {/*Posts*/}
         <div id="posts"><PostsApp posts = {props.posts}/></div>
