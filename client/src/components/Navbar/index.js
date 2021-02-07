@@ -1,20 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import {AppBar, Toolbar, IconButton, Typography} from "@material-ui/core"
-import Button from '@material-ui/core/Button'
-import {MenuIcon} from "@material-ui/icons/Menu"
-
-const Navbar = () =>{
+import * as ReactBootstrap from 'react-bootstrap'
+import "./Navbar.scss"
+const Nav = () =>{
     return(
-    <AppBar position="static">
-    <Toolbar>
-        <Typography className = {"title"} variant="h6">
-        Title of the App
-        </Typography>
-        <Button color="inherit">Add</Button>
-    </Toolbar>
-    </AppBar>
-    );
+        <ReactBootstrap.Navbar fixed="top" bg="dark" expand="lg" variant="dark">
+        <ReactBootstrap.Navbar.Brand href="/">APP NAME</ReactBootstrap.Navbar.Brand>
+        <ReactBootstrap.Navbar.Collapse id="basic-navbar-nav">
+            <ReactBootstrap.Nav className="mr-auto">
+            <ReactBootstrap.Nav.Link href="/create_post">Add</ReactBootstrap.Nav.Link>
+            </ReactBootstrap.Nav>
+
+        </ReactBootstrap.Navbar.Collapse>
+        </ReactBootstrap.Navbar>
+    )
 }
 
-export default Navbar
+export default Nav;

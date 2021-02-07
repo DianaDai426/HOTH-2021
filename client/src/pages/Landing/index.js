@@ -1,13 +1,13 @@
 import React from 'react'
 import styles from './Landing.module.scss'
 import { Link, Route, withRouter} from 'react-router-dom'
-import Navbar from '../../components/Navbar'
+import PostList from '../../components/Posts/PostList'
+import Post from '../../components/Posts/index'
 
 
 export default() =>{
     return <div className={styles.wrap}>
-        
-        <Navbar/>
+    
         {/*Landing Title */}
         <section className = {styles.landing}>
             <div className={styles.mainTitle}>You're not alone.</div>
@@ -16,14 +16,20 @@ export default() =>{
 
         {/*about */}
         <section className={styles.about}>
-        <Link  to="/about">  whoa, what is this about?</Link>  
+        <Link  to="/about" style={{color:"white"}}>  whoa, what is this about?</Link>  
            
         </section>
         
         {/*Post */}
          <section className={styles.post}>
-            somepost
-           
+            {PostList.map ((obj)=>{
+                return(
+                    <Post
+                        data={obj}
+                    />
+               );
+            })}
+          
         </section>
 
     </div>
