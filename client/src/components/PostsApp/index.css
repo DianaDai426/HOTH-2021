@@ -1,0 +1,27 @@
+.post-body{
+    background-color: white;
+    color: black;
+    padding: 30px;
+}
+
+.post-list{
+
+}
+
+.post-card{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 30px;
+    padding: 20px 30px;
+}
+
+.post-tag{
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.post-content{
+    font-size: 18px;
+    margin-bottom: 10px;
+}

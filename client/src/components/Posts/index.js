@@ -9,6 +9,30 @@ import LikeButton from '../LikeButton/index'
 
 
 const useStyles = makeStyles({
+  wrap:{
+    display:'flex',
+    alignItems:'Center',
+    justifyContent:'Center',
+    margin:'20px',
+  },
+  root: {
+    width:'100%',
+    height:'100%',
+ 
+  },
+  bullet: {
+    display: 'inline-block',
+    margin: '0 2px',
+    transform: 'scale(0.8)',
+  },
+  title: {
+    fontSize: 14,
+  },
+  pos: {
+    marginBottom: 12,
+  },
+
+  /*
     wrap:{
         display:'flex',
         alignItems:'Center',
@@ -32,6 +56,7 @@ const useStyles = makeStyles({
     pos: {
       marginBottom: 12,
     },
+    */
   });
 
 
