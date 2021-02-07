@@ -13,6 +13,7 @@ class Nav extends React.Component{
           modal: false,
           tag: false,
           content: "",
+          color: "#e7e7de",
         };
       }
 
@@ -77,7 +78,9 @@ class Nav extends React.Component{
           tag: !this.state.tag,
           modal: prevState.modal,
           content: prevState.content,
-        }))        
+          color : this.state.tag? "#e7e7de": "00587a",
+        }))
+
       }
 
 
@@ -89,10 +92,13 @@ render(){
         <ReactBootstrap.Nav.Link href="javascript:;" onClick={e => this.modalOpen(e)}>Add</ReactBootstrap.Nav.Link>
 
         <Modal show={this.state.modal} handleClose={e => this.modalClose(e)}>
-          <h2>Enter your Encouragement/Failure</h2>
+          {/* <h2>Enter your Encouragement/Failure</h2> */}
           <div className="form-group">
-        <ReactBootstrap.Button onClick = {this.handleClick}>{this.state.tag==0? "Failure":"Encouragement"}</ReactBootstrap.Button>
+        <button className="tag" onClick = {this.handleClick}>{this.state.tag==0? "Failure":"Encouragement"}</button>
+          </div>
+          <div className = "input">
             <input
+              className = "post"
               type="text"
               value={this.state.content}
               name="content"
@@ -101,8 +107,8 @@ render(){
             />
 
           </div>
-          <div className="form-group">
-            <button onClick={e => this.handleSubmit(e)} type="button">
+          <div className="form-group save">
+            <button className="float-right save" onClick={e => this.handleSubmit(e)} type="button">
               Save
             </button>
           </div>

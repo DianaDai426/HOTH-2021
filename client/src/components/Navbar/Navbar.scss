@@ -36,8 +36,26 @@
 //   .navigation{
 //       //your navigation styles
 //   }
-    .button{
-        color: red;
+.input{
+  padding: 5px 10px;
+  height: 30%;
+  background-color: #e7e7de;
+}
 
-    }
-  
+textarea{
+  background-color: #e7e7de;
+  border-color: black;
+  font-size: 10px;
+  width: 180px;
+  height: 30px;
+}
+.tag{
+  font-size: xx-large;
+  height: 30px;
+  background-color: #e7e7de;
+}
+.save{
+  font-size: x-large;
+  height: 30px;
+  background-color: #e7e7de;
+}

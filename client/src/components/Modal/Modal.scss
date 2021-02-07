@@ -1,12 +1,18 @@
 .modal {
     background: rgba(0, 0, 0, 0.6);
+
   }
   .modal-container {
+    background-color:#e7e7de ;
     position: absolute;
     width: 60%;
-    background: #ffffff;
+    height: 40%;
+    background: #e7e7de;
     left: 25%;
     top: 30%;
-    padding: 20px;
+    padding: 30px 40px;
+    margin: 0.5rem;
   }
-  
+  .modal-close{
+    font-color: black;
+  }
