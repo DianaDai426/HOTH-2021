@@ -16,7 +16,7 @@ export default(props) =>{
         <section className = {styles.landing}>
             <div className={styles.mainTitle}>You're not alone.</div>
             <a href="#posts" className={styles.showPosts}>See for yourself</a>
-            <a href="#posts" className={styles.showPosts}>Contribute a post</a>
+            <a onClick={props.modalOpen} className={styles.showPosts}>Contribute a post</a>
 
         </section>
 
