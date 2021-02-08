@@ -3,7 +3,7 @@ import styles from './App.module.scss'
 import Landing from './pages/Landing'
 import {Route, withRouter} from 'react-router-dom'
 import About from './pages/About'
-import CreatePost from './pages/CreatePost'
+//import CreatePost from './pages/CreatePost'
 import Nav from './components/Navbar'
 import {
   BrowserRouter as Router,
