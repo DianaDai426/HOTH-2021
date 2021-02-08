@@ -5,21 +5,36 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 
 class LikeButton extends React.Component{
     state = {
-        likes: 0
+        likes: 0,
+        liked:false,
       };
 
-    addLike = () => {
-        let newCount = this.state.likes + 1;
+ 
+
+    changeLike = ()=>{
+        if(this.state.liked)
+        {
+          let newCount = this.state.likes - 1;
           this.setState({
-          likes: newCount
-        });
-      };
+            likes: newCount,
+            liked: false,
 
-    render() {
-            
+          });
+        }
+        else{
+          let newCount = this.state.likes + 1;
+          this.setState({
+            likes: newCount,
+            liked: true,
+          });
+        }
+    }
+
+
+    render() {           
           return (
-          <div className='Button'>
-            <button onClick={this.addLike}>
+          <div className='Button'>         
+            <button onClick={this.changeLike}>
                 <FavoriteIcon 
                 style={{ 
                     color: "red",
