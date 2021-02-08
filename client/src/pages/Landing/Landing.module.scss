@@ -1,7 +1,10 @@
 html{scroll-behavior:smooth}
 .wrap{
     height:100%;
-    background-color: #00587a;
+    background-image: url("../../network-abstract-connections-with-dots-lines-blue-background_110633-575.jpg");
+    box-shadow: 0 100vw #031e3580 inset;
+    background-size: 100vw 100vh;
+    background-color: #04435c;
     margin: 0px;
 
     .landing{
@@ -35,12 +38,12 @@ html{scroll-behavior:smooth}
         justify-content: center;
         text-align: center;
         height:60px;
-        font-size: 20px;
+        font-size: 15px;
         padding: 0px 30px;
-        width:auto;
+        width:200px;
         margin:auto;
-        color: #00587a;
-        background-color:#e7e7de;
+        color: white;
+        background-color:#5ad9e2e0;
         
         
         border-radius: 1em;

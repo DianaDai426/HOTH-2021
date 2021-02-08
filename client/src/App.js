@@ -82,7 +82,7 @@ class App extends React.Component{
         {/*content */}
         <section className={styles.content}>
             <Route path = '/' 
-            exact component={() => <Landing posts={this.state.posts} modalShow = {this.state.modal} modalOpen = {this.modalOpen} modalClose = {this.modalClose}/>}/>
+            exact component={() => <Landing posts={this.state.posts} modalOpen = {this.modalOpen} />}/>
             <Route path = '/create_post' exact component = {CreatePost}/>
             <Route path = '/about' exact component = {About}/>          
           </section>

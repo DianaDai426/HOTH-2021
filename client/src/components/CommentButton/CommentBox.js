@@ -1,5 +1,6 @@
 import React from 'react'
 import './CommentBox.css'
+import TextField from '@material-ui/core/TextField';
 
 class CommentBox extends React.Component {
     constructor() {
@@ -77,7 +78,9 @@ class CommentBox extends React.Component {
       return (
         <form className="comment-form" onSubmit={this._handleSubmit.bind(this)}>
           <div className="comment-form-fields">
-            <div className='name'><input placeholder="Name" required ref={(input) => this._author = input}></input><br /></div>
+            <div className='name'>
+             
+              <input placeholder="Enter your Name!" required ref={(input) => this._author = input}></input><br /></div>
             </div>
             <div className="comment-form-fields">
             <div className='comment'><textarea placeholder="" rows="4" required ref={(textarea) => this._body = textarea}></textarea></div>

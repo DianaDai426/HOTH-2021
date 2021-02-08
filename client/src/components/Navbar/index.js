@@ -10,7 +10,6 @@ class Nav extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-          //modal: false,
           tag: false,
           content: "",
         };
@@ -41,18 +40,6 @@ class Nav extends React.Component{
         this.props.modalClose();
 
       }
-    
-      // modalOpen() {
-      //   this.setState({ modal: true });
-      // }
-    
-      // modalClose() {
-      //   this.setState({
-      //     content: "",
-      //     name : "",
-      //     modal: false
-      //   });
-      // }
 
       handleClick_E = () => {
         this.setState(prevState =>({

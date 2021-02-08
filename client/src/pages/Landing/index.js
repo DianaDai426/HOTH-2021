@@ -4,7 +4,8 @@ import styles from './Landing.module.scss'
 //import Post from '../../components/Posts/index'
 import PostsApp from '../../components/PostsApp'
 import About from '../About'
-
+import * as ReactBootstrap from 'react-bootstrap'
+import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css"
 
 
 export default(props) =>{
@@ -15,8 +16,16 @@ export default(props) =>{
         {/*Landing Title */}
         <section className = {styles.landing}>
             <div className={styles.mainTitle}>You're not alone.</div>
-            <a href="#posts" className={styles.showPosts}>See for yourself</a>
-            <a onClick={props.modalOpen} className={styles.showPosts}>Contribute a post</a>
+            <ReactBootstrap.Row>
+                <ReactBootstrap.Col>
+                    <a href="#posts" className={styles.showPosts}>See for yourself</a>                    
+                </ReactBootstrap.Col>
+                <ReactBootstrap.Col>
+                    <a onClick={props.modalOpen} className={styles.showPosts}>Contribute a post</a>                    
+                </ReactBootstrap.Col>
+            </ReactBootstrap.Row>
+
+            
 
         </section>
 
