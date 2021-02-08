@@ -1,6 +1,5 @@
 body {
   font-family: 'PT Sans', sans-serif;
-
 }
 button {
   border: none;
@@ -98,10 +97,7 @@ textarea{
   padding: 0.2rem 0;
   color:  #404040;
   text-decoration: none;
-  
-  
 }
-
 
 /*
 body {

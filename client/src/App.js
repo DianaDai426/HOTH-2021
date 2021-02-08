@@ -46,8 +46,11 @@ class App extends React.Component{
   constructor(props){        
     super(props);
     this.state = {
+      modal: false,
       posts: exampleList,
     };
+    this.modalOpen = this.modalOpen.bind(this);
+    this.modalClose = this.modalClose.bind(this);
   }
 
   handleSubmit = (newPost)=>{
@@ -57,24 +60,31 @@ class App extends React.Component{
     console.log(newPost)
   }
 
+  modalOpen = () => {
+    this.setState({ modal: true });
+    console.log("call modal open", this.state.modal);
+  }
+
+  modalClose= () => {
+    this.setState({
+      // content: "",
+      // name : "",
+      modal: false
+    });
+  }
 
   render(){
     return (
       <div className="app">
       {/* Navbar */}
-      <Nav handleSubmit = {this.handleSubmit}/>
+      <Nav handleSubmit = {this.handleSubmit} modalShow = {this.state.modal} modalOpen = {this.modalOpen} modalClose = {this.modalClose}/>
 
         {/*content */}
         <section className={styles.content}>
-
             <Route path = '/' 
-            exact component={() => <Landing posts={this.state.posts}/>}/>
+            exact component={() => <Landing posts={this.state.posts} modalOpen = {this.modalOpen} />}/>
             <Route path = '/create_post' exact component = {CreatePost}/>
             <Route path = '/about' exact component = {About}/>          
-
-
-
-
           </section>
 
          

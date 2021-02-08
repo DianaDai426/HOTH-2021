@@ -10,10 +10,8 @@ class Nav extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-          modal: false,
           tag: false,
           content: "",
-          color: "#e7e7de",
         };
       }
 
@@ -39,20 +37,8 @@ class Nav extends React.Component{
           content: this.state.content,
       }
         this.props.handleSubmit(newPost);
-        this.modalClose();
+        this.props.modalClose();
 
-      }
-    
-      modalOpen() {
-        this.setState({ modal: true });
-      }
-    
-      modalClose() {
-        this.setState({
-          content: "",
-          name : "",
-          modal: false
-        });
       }
 
       handleClick_E = () => {
@@ -86,21 +72,26 @@ class Nav extends React.Component{
 
 render(){
     return(
-    <ReactBootstrap.Navbar fixed="top" bg="dark" expand="lg" variant="dark">
+    <ReactBootstrap.Navbar fixed="top"  expand="lg" variant="dark">
     <ReactBootstrap.Navbar.Brand href="/">APP NAME</ReactBootstrap.Navbar.Brand>
 
         <ReactBootstrap.Nav className="mr-auto">
-        <ReactBootstrap.Nav.Link href="javascript:;" onClick={e => this.modalOpen(e)}>Add</ReactBootstrap.Nav.Link>
-
-        <Modal show={this.state.modal} handleClose={e => this.modalClose(e)}>
+        <ReactBootstrap.Nav.Link href="javascript:;" onClick={e => this.props.modalOpen()}>Add</ReactBootstrap.Nav.Link>
+        
+        <Modal show={this.props.modalShow} handleClose={e => {
+          this.props.modalClose();
+          this.setState({
+              content: "",
+              name : "",
+          })
+        }
+        }>
           {/* <h2>Enter your Encouragement/Failure</h2> */}
 
           <div className="form-group">
         <button className="tag" onClick = {this.handleClick}>{this.state.tag==0? "Failure":"Encouragement"}</button>
         <h3 className="choose">click to choose</h3>
-          </div>
-
-          
+          </div>         
           <div >
             <input
               className = "post"
@@ -110,12 +101,17 @@ render(){
               onChange={e => this.handleChange(e)}
               className="form-control"
             />
-
           </div>
-
-
           <div className="form-group save">
-            <button className="float-right save" onClick={e => this.handleSubmit(e)} type="button">
+            <button className="float-right save" onClick={e => {
+          this.handleSubmit(e);
+          this.props.modalClose();
+          this.setState({
+              content: "",
+              name : "",
+          })
+        }
+        } type="button">
               Save
             </button>
           </div>
