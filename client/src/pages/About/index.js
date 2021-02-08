@@ -8,7 +8,7 @@ export default() =>{
         {/*Landing Title */}
         <section className = {styles.about}>
             <div className={styles.left}>
-                Welcome to App Name.
+                Welcome to EFConnect.
             </div>
             <div className={styles.right}>
                 It happens. You mess up, you feel awful about it, 

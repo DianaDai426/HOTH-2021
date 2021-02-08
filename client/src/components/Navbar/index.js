@@ -73,7 +73,7 @@ class Nav extends React.Component{
 render(){
     return(
     <ReactBootstrap.Navbar fixed="top"  expand="lg" variant="dark">
-    <ReactBootstrap.Navbar.Brand href="/">APP NAME</ReactBootstrap.Navbar.Brand>
+    <ReactBootstrap.Navbar.Brand href="/">EFConnect</ReactBootstrap.Navbar.Brand>
 
         <ReactBootstrap.Nav className="mr-auto">
         <ReactBootstrap.Nav.Link href="javascript:;" onClick={e => this.props.modalOpen()}>Add</ReactBootstrap.Nav.Link>
